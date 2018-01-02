@@ -9,6 +9,17 @@ import matplotlib.pyplot as plt
 from scipy import ndimage
 import scipy.misc
 
+@startuml
+start
+: Use an image as a filter;
+ if(work hard) then (yes)
+    :process all;
+else(no)
+:process yes;
+endif
+
+
+@enduml
 
 def scale(imgs, factor):
     result = imgs.dot(factor)
